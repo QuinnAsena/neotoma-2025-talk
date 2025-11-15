@@ -1,0 +1,184 @@
+---
+title: "A virtual ecological approach to modeling  uncertainties in paleoecology"
+author:
+  - name: "Quinn Asena"
+    affiliation: "University of auckland, Cary Institute"
+  - name: "George Perry"
+    affiliation: "University of auckland"
+  - name: "Janet Wilmshurst"
+    affiliation: "Manaaki Whenua - Landcare Research"
+date: today
+bibliography: refs.bib
+from: markdown+emoji
+format:
+  revealjs:
+    theme: dark
+    preview-links: true
+    highlight-style: github
+    slide-number: c/t
+    width: 1600
+    height: 900
+title-slide-attributes:
+  # data-background-color: "#1a1e43"
+  data-background-color: "#0d545c"
+---
+
+
+## Uncertainties in palaeoecology
+
+<br>
+
+_palaeoecological data are subject to uncertainties that arise from environmental processes, field and laboratory methods, and data processing, and that affects inferences drawn from them_
+
+[Link to slides](https://quinnasena.github.io/)
+
+[Link to website](https://quinnasena.github.io/quinn-asena-website)
+
+
+## The problem
+
+<br>
+
+Proxy data are the product of multiple sources of uncertainty
+
+- Environmental processes
+
+  - bioturbation, taphonomy, variable sedimentation rates...
+
+- Field and laboratory methods
+
+  - core collection methods, sub-sampling strategy, pollen counting...
+
+- Data processing methods
+
+  - age-depth modelling, interpolation...
+
+
+## The question: is the past recoverable from the data?
+
+<br>
+
+::::{.columns}
+:::{.column}
+### Why it matters
+
+- Palaeoecology moving from descriptive to quantitative
+
+- Palaeoecology to inform the future requires robust statistical approaches
+
+- Advances in lab methods, data availability, and statistics are making more inferences possible
+:::
+
+:::{.column}
+### What we can do about it
+
+- One method to assess uncertainties is in simulation
+
+:::
+::::
+
+## Approach and take-home
+
+<br>
+
+- Simulate core samples containing proxies that mimic the statistical properties of empirical data
+
+- Simulate uncertainties: process and observer error that affect the data
+
+- Assess how *statistical inferences* are affected by those uncertainties
+
+
+## Key concepts
+
+<br>
+
+- Virtual ecology [@zurell2010]
+
+- Proxy system modelling [@evans2013]
+
+- Pseudoproxy experiments [@mann2002]
+
+- Other key refs: 
+    - @blaauw2010a
+
+    - @williams2011
+
+
+## Virtual ecology
+
+<br>
+
+Virtual ecology is a framework for assessing sampling and analytical methods in simulation consisting of:
+
+1. an ecological model that generates synthetic data
+
+    1a. a degradation model
+
+2. a simulated observational process (a sampling model) that samples the synthetic data
+
+3. an analytical process or statistical model applied to both sets of data
+
+4. an assessment of the results
+
+
+
+## Virtual ecology and empirical ecology
+
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+#### Perfect knowledege, imperfect world
+
+- known drivers and responses
+
+- known environmental and observational processes
+
+- Advantage of benchmark/control data
+
+- Advantage of replication
+
+- Able to systematically introduce uncertainty
+:::
+
+::: {.column width="50%"}
+#### Perfect world, imperfect knowledge
+
+- Sampled data with no benchmark/control
+
+- Advantage of being reality
+
+:::
+::::
+
+## Proxy system modelling
+
+<br>
+
+Describes the process by which environmental change is recorded as an observable signal in an archive:
+
+1. environmental drivers (e.g., climatic variability)
+
+2. a sensor (a physical, biological or chemical component of the system that responds to the environmental drivers)
+
+3. an archive (the medium in which the response of the sensor is recorded such as a lake sediment)
+
+4. observations drawn from the archive
+
+![Proxy Ststem Modelling framework, from @evans2013](/imgaes/psm.png)
+
+
+## Pseudoproxy experiments
+
+<br>
+
+Borrowing the term "*pseudoproxies*" from climatology:
+
+- pseudoproxies are simulated data or modified observational data
+
+- mimic the statistical properties of empirical data
+
+- pseudoproxy experiments are similar to virtual ecology
+
+
+# References
