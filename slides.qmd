@@ -13,14 +13,16 @@ from: markdown+emoji
 format:
   revealjs:
     theme: dark
+    css: custom.css
     preview-links: true
     highlight-style: github
     slide-number: c/t
     width: 1600
     height: 900
+    embed-resources: true
 title-slide-attributes:
   # data-background-color: "#1a1e43"
-  data-background-color: "#0d545c"
+  data-background-color: "#0e4b52ff"
 ---
 
 
@@ -28,9 +30,8 @@ title-slide-attributes:
 
 <br>
 
-_palaeoecological data are subject to uncertainties that arise from environmental processes, field and laboratory methods, and data processing, and that affects inferences drawn from them_
 
-[Link to slides](https://quinnasena.github.io/)
+[Link to slides](https://quinnasena.github.io/neotoma-2025-talk/slides#/title-slide)
 
 [Link to website](https://quinnasena.github.io/quinn-asena-website)
 
@@ -41,16 +42,15 @@ _palaeoecological data are subject to uncertainties that arise from environmenta
 
 Proxy data are the product of multiple sources of uncertainty
 
-- Environmental processes
+<br>
 
+- Environmental processes
   - bioturbation, taphonomy, variable sedimentation rates...
 
 - Field and laboratory methods
-
   - core collection methods, sub-sampling strategy, pollen counting...
 
 - Data processing methods
-
   - age-depth modelling, interpolation...
 
 
@@ -62,51 +62,49 @@ Proxy data are the product of multiple sources of uncertainty
 :::{.column}
 ### Why it matters
 
+<br>
+
 - Palaeoecology moving from descriptive to quantitative
-
 - Palaeoecology to inform the future requires robust statistical approaches
-
 - Advances in lab methods, data availability, and statistics are making more inferences possible
+
 :::
 
 :::{.column}
 ### What we can do about it
 
+<br>
+
 - One method to assess uncertainties is in simulation
+- We use pseudoproxy modelling / Virtual ecology
 
 :::
 ::::
 
-## Approach and take-home
+## Approach
 
 <br>
 
 - Simulate core samples containing proxies that mimic the statistical properties of empirical data
-
 - Simulate uncertainties: process and observer error that affect the data
-
 - Assess how *statistical inferences* are affected by those uncertainties
 
 
 ## Key concepts
 
-<br>
-
 - Virtual ecology [@zurell2010]
-
 - Proxy system modelling [@evans2013]
-
 - Pseudoproxy experiments [@mann2002]
 
 - Other key refs: 
     - @blaauw2010a
-
     - @williams2011
+    - @asena2024 :blush:
+    - @asena2025 :see_no_evil:
 
 
 ## Virtual ecology
 
-<br>
 
 Virtual ecology is a framework for assessing sampling and analytical methods in simulation consisting of:
 
@@ -151,21 +149,18 @@ Virtual ecology is a framework for assessing sampling and analytical methods in 
 :::
 ::::
 
-## Proxy system modelling
+## Proxy system modelling {.tight}
 
 <br>
 
-Describes the process by which environmental change is recorded as an observable signal in an archive:
+The process by which environmental change is recorded as an observable signal in an archive:
 
 1. environmental drivers (e.g., climatic variability)
-
 2. a sensor (a physical, biological or chemical component of the system that responds to the environmental drivers)
-
 3. an archive (the medium in which the response of the sensor is recorded such as a lake sediment)
-
 4. observations drawn from the archive
 
-![Proxy Ststem Modelling framework, from @evans2013](/imgaes/psm.png)
+![](./imgaes/psm_light.png)
 
 
 ## Pseudoproxy experiments
@@ -179,6 +174,83 @@ Borrowing the term "*pseudoproxies*" from climatology:
 - mimic the statistical properties of empirical data
 
 - pseudoproxy experiments are similar to virtual ecology
+
+
+
+# Building the model
+
+## Simulating pseudoproxies {.scrollable}
+
+<br>
+
+We set out to:
+
+- Represent multiple interacting drivers
+- Include underlying ecological dynamics that can undergo community turnover
+- Generate a multi-species pseudoproxy
+- Recreate core formation processes of accumulation rates and time-span
+- Virtually recreate the observational processes
+
+
+## Simulating a pseudoproxy archive {visibility="hidden"}
+
+<br>
+
+Simulate:
+
+1. environmental driver patterns over time (driver model)
+2. species that respond to the drivers (sensor model)
+3. accumulation rate and time-span and degradation (archive model)
+4. observational process (sampling model)
+5. analyse the pseudoproxies (assessment)
+
+
+## Simulating pseudoproxies {.scrollable}
+
+![](/imgaes/model-plot.svg){fig-align="center"}
+
+## Ruining pseudoproxies
+
+![](/imgaes/degradation_process.png){fig-align="center"}
+
+## "Error-free" to degraded and sub-sampled
+
+![](/imgaes/archive_half_half_walk_lin.png){fig-align="center"}
+
+## Example of 20/200 randomly selected species
+
+![](/imgaes/taxa_plot_N.png){fig-align="center"}
+
+
+## Degraded and sub-sampled pseudoproxies
+
+![](/imgaes/taxa_plot_mix10_sam10_cnt400.png){fig-align="center"}
+
+
+
+# Applying the model
+
+## Analyses
+
+<br>
+
+Ok, now we have generated the data, let's analyse it. Two analyses:
+
+- Fisher Information
+
+- Principal curves
+
+Demonstrating two scenarios with different driving environments.
+
+
+## Analyses visualised
+
+![](/imgaes/fi_prc_grad_vertical2.png){fig-align="center"}
+
+
+
+
+
 
 
 # References

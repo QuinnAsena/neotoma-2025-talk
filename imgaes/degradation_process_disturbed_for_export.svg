@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg15186"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="degradation_process_disturbed_for_export.svg"
    inkscape:export-filename="degradation_process_disturbed_for_export.png"
    inkscape:export-xdpi="96"
@@ -28,13 +28,13 @@
      showgrid="false"
      inkscape:zoom="1.4142136"
      inkscape:cx="316.43028"
-     inkscape:cy="449.36636"
-     inkscape:window-width="2400"
-     inkscape:window-height="1271"
-     inkscape:window-x="4791"
-     inkscape:window-y="-9"
+     inkscape:cy="449.7199"
+     inkscape:window-width="2560"
+     inkscape:window-height="1418"
+     inkscape:window-x="5433"
+     inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g13568-5"
+     inkscape:current-layer="layer1"
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#d1d1d1" />
   <defs
@@ -68,6 +68,17 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.60181"
+       id="rect1"
+       width="538.47559"
+       height="413.09399"
+       x="-18.149925"
+       y="-410.29376"
+       transform="matrix(0.31304468,0,0,0.35280605,9.7976875,183.29439)"
+       inkscape:export-filename="degradation_process.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
     <g
        id="g10322-7"
        transform="matrix(0.35277748,0,0,-0.35277777,5.9681221,183.28857)"
@@ -197,7 +208,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2131">Sp. 42</tspan></text>
+             id="tspan1">Sp. 42</tspan></text>
       </g>
     </g>
     <g
@@ -217,7 +228,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2133">Sp. 56</tspan></text>
+             id="tspan2">Sp. 56</tspan></text>
       </g>
     </g>
     <g
@@ -350,7 +361,7 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan2135">Absolute abundance</tspan></text>
+           id="tspan3">Absolute abundance</tspan></text>
     </g>
     <g
        id="g10610-4"
@@ -384,7 +395,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2137">Sp. 56</tspan></text>
+             id="tspan4">Sp. 56</tspan></text>
       </g>
     </g>
     <g
@@ -419,7 +430,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2139">Sp. 42</tspan></text>
+             id="tspan5">Sp. 42</tspan></text>
       </g>
     </g>
     <g
@@ -439,7 +450,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2141">Sp. 56</tspan></text>
+             id="tspan6">Sp. 56</tspan></text>
       </g>
     </g>
     <g
@@ -502,7 +513,7 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan2143">Relative abundance</tspan></text>
+           id="tspan7">Relative abundance</tspan></text>
     </g>
     <g
        id="g11162-9"
@@ -536,7 +547,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2145">Sp. 42</tspan></text>
+             id="tspan8">Sp. 42</tspan></text>
       </g>
     </g>
     <g
@@ -556,7 +567,7 @@
            xml:space="preserve"><tspan
              x="0"
              y="0"
-             id="tspan2147">Sp. 56</tspan></text>
+             id="tspan9">Sp. 56</tspan></text>
       </g>
     </g>
     <g
@@ -619,7 +630,7 @@
          xml:space="preserve"><tspan
            x="0"
            y="0"
-           id="tspan2149">Relative abundance</tspan></text>
+           id="tspan10">Relative abundance</tspan></text>
     </g>
     <g
        id="g11440-5"
@@ -1565,9 +1576,9 @@
        y="8.5479441"><tspan
          x="-66.360764"
          y="8.5479441"
-         id="tspan2153"><tspan
+         id="tspan12"><tspan
            style="fill:#28220b"
-           id="tspan2151">Young</tspan></tspan></text>
+           id="tspan11">Young</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="rotate(-90)"
@@ -1592,7 +1603,7 @@
          y="2.0300002"><tspan
            x="266.04572"
            y="2.0300002"
-           id="tspan2155">Simulation time</tspan></text>
+           id="tspan13">Simulation time</tspan></text>
     </g>
     <path
        style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.248282;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13156)"
