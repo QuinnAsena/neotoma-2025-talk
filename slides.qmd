@@ -26,14 +26,14 @@ title-slide-attributes:
 ---
 
 
-## Uncertainties in palaeoecology
+# Uncertainties in palaeoecology
 
 <br>
 
 
-[Link to slides](https://quinnasena.github.io/neotoma-2025-talk/slides#/title-slide)
+- [Link to slides](https://quinnasena.github.io/neotoma-2025-talk/slides#/title-slide)
 
-[Link to website](https://quinnasena.github.io/quinn-asena-website)
+- [Link to website](https://quinnasena.github.io/quinn-asena-website)
 
 
 ## The problem
@@ -85,9 +85,9 @@ Proxy data are the product of multiple sources of uncertainty
 
 <br>
 
-- Simulate core samples containing proxies that mimic the statistical properties of empirical data
-- Simulate uncertainties: process and observer error that affect the data
-- Assess how *statistical inferences* are affected by those uncertainties
+- Simulate core samples containing proxies mimicing the statistical properties of empirical data
+- Simulate process and observer error that affect the data
+- Assess how *statistical inferences* are affected by process and observer error
 
 
 ## Key concepts
@@ -128,9 +128,9 @@ Virtual ecology is a framework for assessing sampling and analytical methods in 
 ::: {.column width="50%"}
 #### Perfect knowledege, imperfect world
 
-- known drivers and responses
+- Known drivers and responses
 
-- known environmental and observational processes
+- Known environmental and observational processes
 
 - Advantage of benchmark/control data
 
@@ -155,10 +155,10 @@ Virtual ecology is a framework for assessing sampling and analytical methods in 
 
 The process by which environmental change is recorded as an observable signal in an archive:
 
-1. environmental drivers (e.g., climatic variability)
-2. a sensor (a physical, biological or chemical component of the system that responds to the environmental drivers)
-3. an archive (the medium in which the response of the sensor is recorded such as a lake sediment)
-4. observations drawn from the archive
+1. Environmental drivers (e.g., climatic variability)
+2. A sensor (a physical, biological or chemical component of the system that responds to the environmental drivers)
+3. An archive (the medium in which the response of the sensor is recorded such as a lake sediment)
+4. Observations drawn from the archive
 
 ![](./imgaes/psm_light.png)
 
@@ -169,17 +169,17 @@ The process by which environmental change is recorded as an observable signal in
 
 Borrowing the term "*pseudoproxies*" from climatology:
 
-- pseudoproxies are simulated data or modified observational data
-
-- mimic the statistical properties of empirical data
-
-- pseudoproxy experiments are similar to virtual ecology
+- Pseudoproxies are simulated data or modified observational data
+- Mimic the statistical properties of empirical data
+- Pseudoproxy experiments are similar to virtual ecology
 
 
 
 # Building the model
 
-## Simulating pseudoproxies {.scrollable}
+Let's follow a singe replicate case-study
+
+## Simulating pseudoproxies
 
 <br>
 
@@ -192,26 +192,22 @@ We set out to:
 - Virtually recreate the observational processes
 
 
-## Simulating a pseudoproxy archive {visibility="hidden"}
-
-<br>
-
-Simulate:
-
-1. environmental driver patterns over time (driver model)
-2. species that respond to the drivers (sensor model)
-3. accumulation rate and time-span and degradation (archive model)
-4. observational process (sampling model)
-5. analyse the pseudoproxies (assessment)
-
-
-## Simulating pseudoproxies {.scrollable}
+## Simulating pseudoproxies
 
 ![](/imgaes/model-plot.svg){fig-align="center"}
 
 ## Ruining pseudoproxies
 
 ![](/imgaes/degradation_process.png){fig-align="center"}
+
+## Extending the proxy system model framework
+
+<br>
+
+- Included a degradation (sub-)model to represent environmental processes
+
+
+![](/imgaes/psm_extended_light.png)
 
 ## "Error-free" to degraded and sub-sampled
 
@@ -228,7 +224,7 @@ Simulate:
 
 
 
-# Applying the model
+# Analysing the outputs
 
 ## Analyses
 
@@ -237,7 +233,6 @@ Simulate:
 Ok, now we have generated the data, let's analyse it. Two analyses:
 
 - Fisher Information
-
 - Principal curves
 
 Demonstrating two scenarios with different driving environments.
@@ -248,7 +243,68 @@ Demonstrating two scenarios with different driving environments.
 ![](/imgaes/fi_prc_grad_vertical2.png){fig-align="center"}
 
 
+## Recap! {.tight}
 
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+
+1. Environmental driver patterns over time (environment model)
+2. Species that respond to the drivers (sensor model -- pseudoproxies)
+3. Core representation: accumulation rate and time-span (archive model)
+4. Core mixing (degradation model)
+4. Sampling and counting process (observation model)
+5. Analyse the pseudoproxies (assessment -- Virtual Ecology)
+
+:::
+
+:::{.column width="50%"}
+
+Pervious slides followed:
+
+- 1 scenario
+  - we simulated four different driving environments
+- 1 replicate
+  - we simulated 30 replicates to account for stochasticity
+
+:::
+::::
+
+# Question time
+
+
+## Extending to multiple scenarios and replicates
+
+<br>
+
+Each replicate results in 1210 datasets from the 'error-free' to the most uncertain :scream:.
+
+::::{.columns}
+:::{.column width="40%"}
+
+<br>
+
+Across *replicates* for each of the 1210 datasets:
+
+1. extract features from the FI and PrC
+
+    - feature analysis reduces the FI and PrC to one dimension
+
+2. calculate the distance between each dataset from the 'error-free' to the most uncertain
+
+3. make cool visulisations!
+:::
+
+:::{.column width="60%"}
+![](/imgaes/miracle_occurs.png){width="80%" fig-align="right"}
+:::
+::::
+
+
+## Think of it like this
+
+![](imgaes/3D-array.jpg)
 
 
 
