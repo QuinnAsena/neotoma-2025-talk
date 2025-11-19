@@ -103,6 +103,13 @@ Proxy data are the product of multiple sources of uncertainty
     - @asena2025 :see_no_evil:
 
 
+## Take home message
+
+<br>
+
+- Proxy uncertainty is the counterpart to chronological uncertainty
+- Proxy uncertainty and chronological uncertainty combine and are not separate.
+
 ## Virtual ecology
 
 
@@ -174,7 +181,6 @@ Borrowing the term "*pseudoproxies*" from climatology:
 - Pseudoproxy experiments are similar to virtual ecology
 
 
-
 # Building the model
 
 Let's follow a singe replicate case-study
@@ -186,8 +192,8 @@ Let's follow a singe replicate case-study
 We set out to:
 
 - Represent multiple interacting drivers
-- Include underlying ecological dynamics that can undergo community turnover
-- Generate a multi-species pseudoproxy
+- Include underlying ecological dynamics (e.g., growth rates, niche tolerance)
+- Generate a multi-species pseudoproxy record
 - Recreate core formation processes of accumulation rates and time-span
 - Virtually recreate the observational processes
 
@@ -287,13 +293,13 @@ Each replicate results in 1210 datasets from the 'error-free' to the most uncert
 
 Across *replicates* for each of the 1210 datasets:
 
-1. extract features from the FI and PrC
+1. Extract features from the FI and PrC
 
     - feature analysis reduces the FI and PrC to one dimension
 
-2. calculate the distance between each dataset from the 'error-free' to the most uncertain
+2. Calculate the distance between each dataset from the 'error-free' to the most uncertain
 
-3. make cool visulisations!
+3. Make cool visulisations!
 :::
 
 :::{.column width="60%"}
@@ -304,9 +310,115 @@ Across *replicates* for each of the 1210 datasets:
 
 ## Think of it like this
 
-![](imgaes/3D-array.jpg)
+- Each column is a Fisher Information (or PrC) series that we saw earlier
+
+![](imgaes/3D-array.png){fig-align="center"}
 
 
+
+## Feature analysis
+
+- Feature Analysis for Time Series reduces the dimensions of the data to a set of comparable metrics ('features')
+- Extracted 'features' are compared across uncertainty levels using Euclidian distance
+
+
+## Assessing results (Virtual Ecology)
+
+- Each uncertainty applied individually to Fisher Information
+
+![](/imgaes/walk_lin_gradual_fisher_metrics_dotplot.png){fig-align="center"}
+
+
+## Assessing results (Virtual Ecology)
+
+- Two uncertainties applied to fisher information
+
+![](/imgaes/walk_lin_gradual_fisher_two_dim_metrics_mean_plot.png){fig-align="center"}
+
+
+# Question time
+
+- We have 3-dimensional uncertainty plots but maybe we have seen enough plots for now!
+
+## How does this help?
+
+- Understand the relative effects of uncertainties
+- Consider how we can mitigate uncertainty
+- Take advantage of replicates and 'known' conditions
+- Understand the effect of proxy uncertainty on the chronological placement of events
+
+
+## Application to empirical
+
+Simulation methods can be integrated with empirical studies to:
+
+- _a priori_ help shape field sampling methods: e.g., number of core samples (across a region or local replication) required for a given research question.
+
+- understand the sub-sampling and count resolution required to increase the likelihood of detecting a hypothesised signal in the data.
+
+- accompany empirical study to test hypotheses about the underlying dynamics that may cause an observed pattern in the data.
+
+- assess whether inferences made from the data are robust to uncertainty.
+
+## Extensions
+
+- Assessing error rates
+- Chronological uncertainty combined with proxy uncertainty
+- Extend underlying dynamics
+
+
+# Final question time!
+
+"All models are wrong, some are useful" @box1979
+
+
+## Acknowledgements
+
+- **George Perry** (University of Auckland)
+- **Janet Wilmshurs** (Manaaki Whenua – Landcare Research)
+
+- Jack Williams (University of Wisconsin Madison)
+- Tony Ives (University of Wisconsin Madison)
+
+- Biological heritage Science Challenge (NZ) and the National Science Foundation (USA)
 
 
 # References
+
+::: {#refs}
+:::
+
+
+
+# Extras
+
+## Think of it like this
+
+- Fisher Information and PrC series
+
+![](/imgaes/fi_prc_grad_vertical2.png){fig-align="center"}
+
+## Think of it like this
+
+- Each column is a Fisher Information (or PrC) series
+
+![](imgaes/3D-array.png){fig-align="center"}
+
+
+## Think of it like this
+
+- Now, each column is a 'feature' describing the series
+
+![](imgaes/3D-array-features.png){fig-align="center"}
+
+
+## Think of it like this
+
+- Now we have a distance matrix of every combination of uncertainty
+
+![](imgaes/3D-array-distance.png){fig-align="center"}
+
+
+## Assessing results
+
+![](imgaes/walk_lin_gradual_fisher_three_dim_grid_plot.png){fig-align="center"}
