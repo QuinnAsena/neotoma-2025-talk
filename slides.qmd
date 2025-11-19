@@ -90,11 +90,19 @@ Proxy data are the product of multiple sources of uncertainty
 - Assess how *statistical inferences* are affected by process and observer error
 
 
+## Take home message
+
+<br>
+
+- Proxy uncertainty is the counterpart to chronological uncertainty
+- Proxy uncertainty and chronological uncertainty are not separate and have combined effects
+
+
 ## Key concepts
 
 - Virtual ecology [@zurell2010]
-- Proxy system modelling [@evans2013]
 - Pseudoproxy experiments [@mann2002]
+- Proxy system modelling [@evans2013]
 
 - Other key refs: 
     - @blaauw2010a
@@ -103,27 +111,20 @@ Proxy data are the product of multiple sources of uncertainty
     - @asena2025 :see_no_evil:
 
 
-## Take home message
-
-<br>
-
-- Proxy uncertainty is the counterpart to chronological uncertainty
-- Proxy uncertainty and chronological uncertainty combine and are not separate.
-
 ## Virtual ecology
 
 
 Virtual ecology is a framework for assessing sampling and analytical methods in simulation consisting of:
 
-1. an ecological model that generates synthetic data
+1. An ecological model that generates synthetic data
 
     1a. a degradation model
 
-2. a simulated observational process (a sampling model) that samples the synthetic data
+2. A simulated observational process (a sampling model) that samples the synthetic data
 
-3. an analytical process or statistical model applied to both sets of data
+3. An analytical process or statistical model applied to both sets of data
 
-4. an assessment of the results
+4. An assessment of the results
 
 
 
@@ -136,13 +137,9 @@ Virtual ecology is a framework for assessing sampling and analytical methods in 
 #### Perfect knowledege, imperfect world
 
 - Known drivers and responses
-
 - Known environmental and observational processes
-
 - Advantage of benchmark/control data
-
 - Advantage of replication
-
 - Able to systematically introduce uncertainty
 :::
 
@@ -150,24 +147,10 @@ Virtual ecology is a framework for assessing sampling and analytical methods in 
 #### Perfect world, imperfect knowledge
 
 - Sampled data with no benchmark/control
-
 - Advantage of being reality
 
 :::
 ::::
-
-## Proxy system modelling {.tight}
-
-<br>
-
-The process by which environmental change is recorded as an observable signal in an archive:
-
-1. Environmental drivers (e.g., climatic variability)
-2. A sensor (a physical, biological or chemical component of the system that responds to the environmental drivers)
-3. An archive (the medium in which the response of the sensor is recorded such as a lake sediment)
-4. Observations drawn from the archive
-
-![](./imgaes/psm_light.png)
 
 
 ## Pseudoproxy experiments
@@ -179,6 +162,19 @@ Borrowing the term "*pseudoproxies*" from climatology:
 - Pseudoproxies are simulated data or modified observational data
 - Mimic the statistical properties of empirical data
 - Pseudoproxy experiments are similar to virtual ecology
+
+## Proxy system modelling {.tight}
+
+<br>
+
+The process by which environmental change is recorded as an observable signal in an archive:
+
+1. Environmental drivers (e.g., climatic variability)
+2. A sensor (a component of the system that responds to the environmental drivers)
+3. An archive (the medium in which the response of the sensor is recorded)
+4. Observations drawn from the archive
+
+![](./imgaes/psm_light.png)
 
 
 # Building the model
@@ -192,7 +188,7 @@ Let's follow a singe replicate case-study
 We set out to:
 
 - Represent multiple interacting drivers
-- Include underlying ecological dynamics (e.g., growth rates, niche tolerance)
+- Include underlying ecological dynamics (e.g., growth rates, niche breadth)
 - Generate a multi-species pseudoproxy record
 - Recreate core formation processes of accumulation rates and time-span
 - Virtually recreate the observational processes
@@ -241,7 +237,7 @@ Ok, now we have generated the data, let's analyse it. Two analyses:
 - Fisher Information
 - Principal curves
 
-Demonstrating two scenarios with different driving environments.
+Demonstrating two scenarios with different driving environments
 
 
 ## Analyses visualised
@@ -273,21 +269,22 @@ Pervious slides followed:
   - we simulated four different driving environments
 - 1 replicate
   - we simulated 30 replicates to account for stochasticity
-
+- 1 uncertainty level
+  - we simulated 1210 (all combinations of mixing, sub-sampling, and proxy counting)
 :::
 ::::
 
 # Question time
 
 
-## Extending to multiple scenarios and replicates
+## Extending to multiple scenarios and replicates {.tight}
 
 <br>
 
-Each replicate results in 1210 datasets from the 'error-free' to the most uncertain :scream:.
+Each replicate results in 1210 datasets from the 'error-free' to the most uncertain :scream:
 
 ::::{.columns}
-:::{.column width="40%"}
+:::{.column width="50%"}
 
 <br>
 
@@ -302,8 +299,8 @@ Across *replicates* for each of the 1210 datasets:
 3. Make cool visulisations!
 :::
 
-:::{.column width="60%"}
-![](/imgaes/miracle_occurs.png){width="80%" fig-align="right"}
+:::{.column width="50%"}
+![](/imgaes/miracle_occurs.png){width="60%" fig-align="center"}
 :::
 ::::
 
@@ -352,19 +349,19 @@ Across *replicates* for each of the 1210 datasets:
 
 Simulation methods can be integrated with empirical studies to:
 
-- _a priori_ help shape field sampling methods: e.g., number of core samples (across a region or local replication) required for a given research question.
+- _a priori_ help shape field sampling methods: e.g., number of core samples (across a region or local replication) required for a given research question
 
-- understand the sub-sampling and count resolution required to increase the likelihood of detecting a hypothesised signal in the data.
+- understand the sub-sampling and count resolution required to increase the likelihood of detecting a hypothesised signal in the data
 
-- accompany empirical study to test hypotheses about the underlying dynamics that may cause an observed pattern in the data.
+- accompany empirical study to test hypotheses about the underlying dynamics that may cause an observed pattern in the data
 
-- assess whether inferences made from the data are robust to uncertainty.
+- assess whether inferences made from the data are robust to uncertainty
 
-## Extensions
+## Outlook
 
 - Assessing error rates
-- Chronological uncertainty combined with proxy uncertainty
-- Extend underlying dynamics
+- Assess chronological uncertainty combined with proxy uncertainty
+- Extend underlying dynamics to include hysteresis
 
 
 # Final question time!
